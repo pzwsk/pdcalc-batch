@@ -22,8 +22,6 @@ for row in csv_f:
 	except urllib2.HTTPError, err:
   			row.append(err.code)
 			wr_error.writerow(row)
-			print i 
-			print "error: ", row[6]
 			i += 1      			
    	else:
    		pass
@@ -33,8 +31,6 @@ for row in csv_f:
 	except urllib2.HTTPError, err:
 			row.append(err.code)
 			wr_error.writerow(row)
-			print i 
-			print "error: ", row[6]
 			i += 1
 	else:
 		pass
@@ -47,8 +43,6 @@ for row in csv_f:
 	except requests.HTTPError, err:
 			row.append(err.code)
 			wr_error.writerow(row)
-			print i 
-			print "error: ", row[6]
 			i += 1
 	else:
 		pass
@@ -61,8 +55,6 @@ for row in csv_f:
 	
 	row.append(fromyear)
 	wr.writerow(row)
-	print i 
-	print row[6]
 	i += 1
 
 
